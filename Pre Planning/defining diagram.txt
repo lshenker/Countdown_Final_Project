@@ -1,0 +1,36 @@
+INPUTS:
+  promptDate
+
+PROCESSING:
+  get promptDate form the user
+  check to see if valid date
+  check to see if it has passed already
+  create countdown function
+  set promptDate as a date
+  create now variable as a date
+  create variable timeDiff and set it to dates time minus nows time
+  if timeDiff is less than or equal to 0 then 
+  clear the timer
+  display "COUNTDOWN COMPLETE"
+  change numbers to red
+  play complete sound
+
+  create variable "seconds" and set it to timeDiff divided by 1000
+  create variable "minutes" and set it to seconds divided by 60
+  create variable "hours" and set it to minutes divided by 60
+  create variable "days" and set it to days divided by 24
+      
+  set hours to mod 24
+  set minutes to mod 60
+  set seconds to mod 60
+
+  if days, hours, minutes, or seconds are less than 10 then
+  add a "0" placeholder before them
+
+  display days in div with id of "days" and add a ":"
+  display hours in div with id of "hours" and add a ":"
+  display minutes in div with id of "minutes" and add a ":"
+  display seconds in div with id of "seconds"
+
+OUTPUTS:
+  days, hours, minutes, seconds, countdown complete (on completion) 

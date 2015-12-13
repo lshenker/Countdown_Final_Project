@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>Countdown</title>
+    <link href="stylesheets/style.css" rel="stylesheet">
+  </head>
+  <body>
+  
+    <main>
+    
+      <div id="input">
+        <p>Please enter a start date for a countdown.</p>
+        <input required type="text" name="datePrompt" id="datePrompt" 
+               placeholder="MM/DD/YYYY">
+        <input type="submit" id="button" value="Start" onclick="validDate();">
+      </div>
+      
+      <div id="display">
+        <div id="days" class="display"></div>
+        <div id="hours" class="display"></div>
+        <div id="minutes" class="display"></div>
+        <div id="seconds" class="display"></div>
+      </div>
+      
+      <div id="headings">
+        <div class="headings"><h3>DAYS</h3></div>
+        <div class="headings"><h3>HOURS</h3></div>
+        <div class="headings"><h3>MINUTES</h3></div>
+        <div class="headings"><h3>SECONDS</h3></div>
+      </div>
+      
+      <div id="finish"></div>
+      
+      <div id="reload">
+        <input type="button" id="button" value="Select a different date" 
+               onclick="location.reload();">
+      </div>
+      
+    </main>
+    
+    <footer>
+      <small>
+        <em>
+          Copyright &copy; 2015 Leon Shenker
+        </em>
+      </small>
+    </footer>  
+    
+    <script src="js/countdownFunction.js"></script>
+    <script src="js/callFunction.js"></script>
+    <script src="js/validDate.js"></script>
+    <script src="js/isDate.js"></script>
+    
+  </body>
+</html>

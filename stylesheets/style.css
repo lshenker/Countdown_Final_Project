@@ -1,0 +1,99 @@
+@font-face {
+  font-family: digital;
+  src: url(../fonts/DS-DIGIB.ttf);
+}
+
+#display {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#finish {
+  color: green;
+  font-family: digital;
+  font-size: 140px;
+  text-align: center;
+}
+
+#headings {
+  display: none;
+  text-align: center;
+}
+
+#input {
+  text-align: center;
+}
+
+#reload {
+  margin: 40px;
+  text-align: center;
+}
+
+#seconds {
+  width: 145px;
+}
+
+.display {
+  color: #C18125;
+  display: inline-block;
+  font-family: digital;
+  font-size: 140px;
+}
+
+.headings {
+  display: inline-block;
+  width: 172px;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+footer {
+  bottom: 0;
+  display: block;
+  height: 30px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+h3 {
+  font-size: 16px;
+  margin: 0;
+  text-align: center;
+}
+
+header, main, nav, footer, article {
+  display: block;
+}
+
+main {
+  background-color: black;
+  color: grey;
+  padding-top: 100px;
+}
+
+p {
+  font-size: 28px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

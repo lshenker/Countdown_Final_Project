@@ -1,0 +1,14 @@
+PROBLEM STATEMENT:
+  The program will prompt the user for a countdown date. Then it will calculate 
+  the time difference between the current time and the date entered. It will 
+  calculate the days, hours, minutes, and seconds left until the countdown date 
+  entered and display the values in real time. When the countdown is complete, 
+  a "countdown complete" screen will be displayed.
+
+NOUNS:
+  countdown date, time difference, current time, days, hours, minutes, seconds, 
+  values
+
+VERBS:
+  prompt, calculate, display
+

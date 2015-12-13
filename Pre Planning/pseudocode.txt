@@ -1,0 +1,58 @@
+CountdownTimer
+  get promptDate from the user
+  IF promptDate is a date then
+    callFunction to check if it has passed
+  ELSE
+    display error message "Invalid message"
+  END IF
+  
+  IF promptDate has already passed then
+    display error message "Date has already passed"
+  ELSE
+    start countdown
+  ENDIF
+  
+  Run countdown function
+    set date to the promptDate 
+    create variable "now" as a Date
+    create variable timeDiff and set it to date's time in miliseconds minus 
+    now's time in miliseconds
+    IF timeDiff is less than or equal to 0 then 
+      clear the timer
+      display "COUNTDOWN COMPLETE"
+      change numbers to red
+      play complete sound
+      end function
+    ENDIF
+    
+    create variable "seconds" and set it to timeDiff divided by 1000
+    create variable "minutes" and set it to seconds divided by 60
+    create variable "hours" and set it to minutes divided by 60
+    create variable "days" and set it to days divided by 24
+    
+    set hours to mod 24
+    set minutes to mod 60
+    set seconds to mod 60
+    
+    IF days are less than 10 then
+      add a "0" placeholder before days
+    ENDIF
+    IF hours are less than 10 then
+      add a "0" placeholder before hours
+    ENDIF
+    IF minutes are less than 10 then
+      add a "0" placeholder before minutes
+    ENDIF
+    IF seconds are less than 10 then
+      add a "0" placeholder before seconds
+    ENDIF
+    
+    display days in div with id of "days" and add a ":"
+    display hours in div with id of "hours" and add a ":"
+    display minutes in div with id of "minutes" and add a ":"
+    display seconds in div with id of "seconds"
+    
+    create a variable timer and set timeout to run function every seconds
+    play "tick2" audio sound every second
+  call the countdown function
+END

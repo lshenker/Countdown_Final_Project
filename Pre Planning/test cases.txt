@@ -1,0 +1,45 @@
+VARIABLES: promptDate
+
+TEST CASE 1:
+
+  INPUT VALUES:
+    1/1/2015
+
+  EXPECTED RESULT:
+    "Date has already passed, please try again."
+
+  ACTUAL RESULT:
+    "Date has already passed, please try again."
+
+TEST CASE 2:
+
+  INPUT VALUES:
+    aghjkj
+
+  EXPECTED RESULT:
+    "Invalid entry. Please enter a date in MM/DD/YYYY format."
+
+  ACTUAL RESULT:
+    "Invalid entry. Please enter a date in MM/DD/YYYY format."
+
+TEST CASE 3:
+
+  INPUT VALUES:
+    12/25/2015
+
+  EXPECTED RESULT:
+    ~ 11 DAYS (results vary)
+
+  ACTUAL RESULT:
+    11 DAYS 09 HOURS 35 MINUTES 15 SECONDS (results vary)
+  
+TEST CASE 4:
+
+  INPUT VALUES:
+    12/13/2015 14:26:50
+
+  EXPECTED RESULT:
+    ~ 30 seconds (results vary)
+
+  ACTUAL RESULT:
+    00 DAYS 00 HOURS 00 MINUTES 18 SECONDS (results vary)

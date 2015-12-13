@@ -1,0 +1,9 @@
+PROBLEM STATEMENT:
+  The program will prompt the user for a countdown date. It will check if the 
+  date entered is a date and if it has passed already or not. If it is a date 
+  and has not passed then the countdown function will fun. If not, an error 
+  message will be displayed. Then it will calculate the time difference between 
+  the current time and the date entered. It will calculate the days, hours, 
+  minutes, and seconds left until the countdown date entered and display the 
+  values in real time. When the countdown is complete, a "countdown complete" 
+  screen will be displayed.
